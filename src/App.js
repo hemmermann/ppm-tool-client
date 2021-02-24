@@ -8,6 +8,7 @@ import { Provider } from "react-redux";
 import store from "./store";
 import { render } from "@testing-library/react";
 import { Component } from "react";
+import UpdateProject from "./components/project/UpdateProject";
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
             <Header />
             <Route exact path="/dashboard" component={Dashboard} />
             <Route exact path="/addProject" component={AddProject} />
+            <Route exact path="/updateProject/:id" component={UpdateProject} />
           </div>
         </Router>
       </Provider>
