@@ -5,41 +5,57 @@ import { connect } from "react-redux";
 import classnames from "classnames";
 
 class UpdateProject extends Component {
-  constructor() {
-    super();
+//   constructor() {
+//     super();
 
-    this.state = {
+//     this.state = {
+//       id: "",
+//       projectName: "",
+//       projectIdentifier: "",
+//       description: "",
+//       start_date: "",
+//       end_date: "",
+//     };
+// }
+
+  updateProject(props) {
+    const [project,updateProject] = useState( {
       id: "",
       projectName: "",
       projectIdentifier: "",
       description: "",
       start_date: "",
       end_date: "",
-    };
+    })
 
-    // this.onChange = this.onChange.bind(this);
-    // this.onSubmit = this.onSubmit.bind(this);
+    useEffect(() => {
+      effect
+      return () => {
+        cleanup
+      }
+    }, [input])
+
   }
 
-  componentWillReceiveProps(nextProps) {
-    const {
-      id,
-      projectName,
-      projectIdentifier,
-      description,
-      start_date,
-      end_date
-    } = nextProps.project;
+  // componentWillReceiveProps(nextProps) {
+  //   const {
+  //     id,
+  //     projectName,
+  //     projectIdentifier,
+  //     description,
+  //     start_date,
+  //     end_date
+  //   } = nextProps.project;
 
-    this.setState({
-      id,
-      projectName,
-      projectIdentifier,
-      description,
-      start_date,
-      end_date
-    });
-  }
+  //   this.setState({
+  //     id,
+  //     projectName,
+  //     projectIdentifier,
+  //     description,
+  //     start_date,
+  //     end_date
+  //   });
+  // }
 
   static getDerivedStateFromProps(nextProps, prevState) {
     console.log(

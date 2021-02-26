@@ -8,7 +8,7 @@ import { Provider } from "react-redux";
 import store from "./store";
 import { render } from "@testing-library/react";
 import { Component } from "react";
-import UpdateProject from "./components/project/UpdateProject";
+import UpdateProject from "./components/project/UpdateProject copy";
 
 class App extends Component {
   render() {
